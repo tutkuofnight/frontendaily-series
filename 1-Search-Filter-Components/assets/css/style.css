@@ -1,0 +1,153 @@
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+body {
+  background-color: #303236;
+}
+body input {
+  outline: none;
+}
+
+.component--search {
+  background-color: #3d3f43;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 35px 30px;
+  max-width: 350px;
+  display: inline-block;
+}
+.component--search form {
+  display: flex;
+}
+.component--search form img {
+  background-color: #303236;
+  padding: 10px 15px;
+}
+.component--search form input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #303236;
+  color: white;
+  border: 1px solid #303236;
+  font-size: 17px;
+}
+.component--search h6 {
+  padding: 30px 0px;
+}
+.component--search ul li {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.component--search ul li.active a {
+  color: #2ccdea;
+}
+.component--search ul li a:hover {
+  color: #2ccdea;
+  font-weight: bold;
+}
+
+.component--search--header {
+  margin: 20px;
+  align-items: center;
+  gap: 20px;
+  background-color: #3d3f43;
+  padding: 15px;
+  display: inline-flex;
+  border-radius: 8px;
+}
+.component--search--header form {
+  display: flex;
+  padding: 0px 5px;
+}
+.component--search--header input {
+  border: none;
+  padding: 10px 12px;
+  background: #3d3f43;
+  width: 300px;
+  font-size: 17px;
+}
+.component--search--header nav {
+  display: flex;
+  gap: 10px;
+}
+.component--search--header nav label {
+  cursor: pointer;
+}
+.component--search--header nav label input {
+  display: none;
+}
+.component--search--header nav label input:checked + .text {
+  background: #303236;
+  color: #2ccdea;
+}
+.component--search--header nav label .text {
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 300ms all;
+}
+
+.component--filter {
+  background: #3d3f43;
+  border-radius: 12px;
+  padding: 40px;
+  display: inline-block;
+  margin: 20px;
+}
+.component--filter form {
+  margin-bottom: 40px;
+}
+.component--filter form label {
+  display: grid;
+  grid-template-columns: 100px 250px;
+  margin-bottom: 20px;
+}
+.component--filter form label p {
+  padding: 5px 10px;
+  align-self: center;
+  font-weight: bold;
+}
+.component--filter form label input, .component--filter form label select {
+  width: 100%;
+  background: #303236;
+  outline: none;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.component--filter form label select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background: #303236 url("../img/arrow-down.svg") no-repeat calc(100% - 20px) center;
+}
+.component--filter footer {
+  border-top: 1px solid #303236;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.component--filter footer a {
+  color: rgb(188, 188, 188);
+}
+.component--filter footer a:hover {
+  color: white;
+}
+.component--filter footer button {
+  background-color: rgba(44, 205, 234, 0.7);
+  padding: 15px 25px;
+  border-radius: 100px;
+  font-size: 17px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

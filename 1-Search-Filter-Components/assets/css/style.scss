@@ -1,0 +1,157 @@
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+$black: #303236;
+$lightblack: #3d3f43;
+$themeColor: #2ccdea;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+body {
+  background-color: $black;
+  input {
+    outline: none;
+  }
+}
+
+.component--search {
+  background-color: $lightblack;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 35px 30px;
+  max-width: 350px;
+  display: inline-block;
+  form {
+    display: flex;
+    img {
+      background-color: $black;
+      padding: 10px 15px;
+    }
+    input {
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px 0px;
+      background-color: $black;
+      color: white;
+      border: 1px solid $black;
+      font-size: 17px;
+    }
+  }
+  h6 {
+    padding: 30px 0px;
+  }
+  ul {
+
+    li {
+      margin-bottom: 20px;
+      font-size: 16px;
+      &.active {
+        a {
+          color: $themeColor;
+        }
+      }
+      a:hover {
+        color: $themeColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.component--search--header {
+  margin: 20px;
+  align-items: center;
+  gap: 20px;
+  background-color: $lightblack;
+  padding: 15px;
+  display: inline-flex;
+  border-radius: 8px;
+  form {
+    display: flex;
+    padding: 0px 5px;
+  }
+  input {
+    border: none;
+    padding: 10px 12px;
+    background: $lightblack;
+    width: 300px;
+    font-size: 17px;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+    label {
+      cursor: pointer;
+      input {
+        display: none;
+        &:checked + .text {
+          background: $black;
+          color: $themeColor;
+        }
+      }
+      .text {
+        border-radius: 30px;
+        padding: 10px 20px;
+        transition: 300ms all;
+      }
+    }
+  }
+}
+
+.component--filter {
+  background: $lightblack;
+  border-radius: 12px;
+  padding: 40px;
+  display: inline-block;
+  margin: 20px;
+  form {
+    margin-bottom: 40px;
+    label {
+      display: grid;
+      grid-template-columns: 100px 250px;
+      margin-bottom: 20px;
+      p {
+        padding: 5px 10px;
+        align-self: center;
+        font-weight: bold;
+      }
+      input , select{
+        width: 100%;
+        background: $black;
+        outline: none;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      select {
+        appearance: none;
+        cursor: pointer;
+        background: #303236 url('../img/arrow-down.svg') no-repeat calc(100% - 20px) center;
+      }
+    }
+  }
+  footer {
+    border-top: 1px solid $black;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: rgb(188, 188, 188);
+      &:hover {
+        color: white;
+      }
+    }
+    button {
+      background-color: rgba($themeColor, 0.7);
+      padding: 15px 25px;
+      border-radius: 100px;
+      font-size: 17px;
+      border: none;
+    }
+  }
+}

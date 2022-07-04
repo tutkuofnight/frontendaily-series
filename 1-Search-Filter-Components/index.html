@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search-Filter Components</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="component--search">
+    <form>
+      <img src="./assets/img/search.svg">
+      <input type="text" placeholder="Start typing to search">
+    </form>
+    <h6>POPULAR SEARCHES</h6>
+    <ul>
+      <li><a href="#">Air Transport</a></li>
+      <li><a href="#">Aviation</a></li>
+      <li class="active"><a href="#">Mekaniske Verksted</a></li>
+      <li><a href="#">Port Authority</a></li>
+      <li><a href="#">Sporvei</a></li>
+      <li><a href="#">Bergens Kreditbank</a></li>
+    </ul>
+  </div>
+  <div class="component--search--header">
+    <form>
+      <img src="./assets/img/search.svg">
+      <input type="text" placeholder="Start typing to search">
+    </form>
+    <nav>
+      <label for="projects">
+        <input type="radio" name="type" id="projects" checked>
+        <span class="text">Projects</span>
+      </label>
+      <label for="images">
+        <input type="radio" name="type" id="images">
+        <span class="text">Images</span>
+      </label>
+      <label for="people">
+        <input type="radio" name="type" id="people">
+        <span class="text">People</span>
+      </label>
+    </nav>
+  </div>
+  <div class="component--filter">
+    <form>
+      <label for="country">
+        <p>Country</p>
+        <select name="country" id="country">
+          <option value="">Norway</option>
+          <option value="">Turkey</option>
+        </select>
+      </label>
+      <label for="city">
+        <p>City</p>
+        <input type="text" id="city" value="Bergen">
+      </label>
+    </form>
+    <footer>
+      <a href="#">Cancel</a>
+      <button>Apply Filters</button>
+    </footer>
+  </div>
+</body>
+</html>
