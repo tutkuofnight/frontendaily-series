@@ -1,0 +1,123 @@
+@import 'font';
+@import 'icon-font';
+
+$themeColor: #157aff;
+$backgroundColor: #1a212a;
+$lightgroundColor: rgba(#535F6D, .19);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Louis George Cafe';
+  -webkit-overflow-scrolling: touch;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+body {
+  background: $backgroundColor;
+  color: white;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.screen {
+  width: 400px;
+  border: 5px solid rgba(#535F6D , 0.7);
+}
+
+.main-page {
+  .main-page-header {
+    padding: 30px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    div {
+      p {
+        color: #7f868f;
+        &:last-child {
+          color: white;
+          font-size: 2.5em;
+        }
+      }
+    }
+    img {
+      width: 50px;
+      border-radius: 50%;
+      border: 3px solid $themeColor;
+      box-shadow: #157aff 0px 0px 10px 0px;
+    }
+
+  }
+  ul {
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    li {
+      a {
+        text-align: center;
+        color: white;
+        p {
+          margin-top: 5px;
+        }
+        .icon {
+          background: $lightgroundColor;
+          border-radius: 24px;
+          padding: 15px;
+          display: grid;
+          place-items: center;
+          width: 60px;
+          font-size: 24px;
+        }
+        i {
+          color: white;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .daily-transaction {
+    padding: 10px 20px;
+    background: rgba($lightgroundColor, 0.1);
+    border-radius: 20px 20px 0px 0px;
+    .daily-transaction-header {
+      margin-top: 10px;
+      padding-top: 15px;
+      div {
+        display: flex;
+        gap: 10px;
+        a {
+          padding: 15px;
+          border-radius: 15px;
+          display: grid;
+          place-items: center;
+          background: rgba($lightgroundColor, 0.3);
+          i {
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
