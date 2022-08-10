@@ -61,99 +61,61 @@
 
 .icon-arrow-right:before {
   content: "\e801";
-}
-
-/* '' */
+} /* '' */
 .icon-atm:before {
   content: "\e802";
-}
-
-/* '' */
+} /* '' */
 .icon-back:before {
   content: "\e803";
-}
-
-/* '' */
+} /* '' */
 .icon-bank:before {
   content: "\e804";
-}
-
-/* '' */
+} /* '' */
 .icon-block:before {
   content: "\e805";
-}
-
-/* '' */
+} /* '' */
 .icon-card:before {
   content: "\e806";
-}
-
-/* '' */
+} /* '' */
 .icon-chart:before {
   content: "\e807";
-}
-
-/* '' */
+} /* '' */
 .icon-download:before {
   content: "\e808";
-}
-
-/* '' */
+} /* '' */
 .icon-filter:before {
   content: "\e809";
-}
-
-/* '' */
+} /* '' */
 .icon-loan:before {
   content: "\e80b";
-}
-
-/* '' */
+} /* '' */
 .icon-pig:before {
   content: "\e80c";
-}
-
-/* '' */
+} /* '' */
 .icon-pincode:before {
   content: "\e80d";
-}
-
-/* '' */
+} /* '' */
 .icon-request:before {
   content: "\e80f";
-}
-
-/* '' */
+} /* '' */
 .icon-send:before {
   content: "\e811";
-}
-
-/* '' */
+} /* '' */
 .icon-plus:before {
   content: "\e813";
-}
-
-/* '' */
+} /* '' */
 .icon-search:before {
   content: "\e814";
-}
-
-/* '' */
+} /* '' */
 .icon-home:before {
   content: "\e815";
-}
-
-/* '' */
+} /* '' */
 .icon-3dots:before {
   content: "\e816";
-}
-
-/* '' */
+} /* '' */
 .icon-settings:before {
   content: "\e817";
-}
-
-/* '' */
+} /* '' */
 * {
   margin: 0;
   padding: 0;
@@ -188,7 +150,6 @@ body {
 
 main {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +158,7 @@ main {
 
 .screen {
   width: 400px;
+  height: 700px;
   border: 5px solid rgba(83, 95, 109, 0.7);
 }
 
@@ -248,11 +210,11 @@ main {
 .main-page .daily-transaction {
   padding: 10px 20px;
   background: rgba(83, 95, 109, 0.1);
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
+  overflow-y: auto;
 }
 .main-page .daily-transaction .daily-transaction-header {
-  margin-top: 10px;
-  padding-top: 15px;
+  margin: 10px 0px;
 }
 .main-page .daily-transaction .daily-transaction-header div {
   display: flex;
@@ -268,4 +230,28 @@ main {
 .main-page .daily-transaction .daily-transaction-header div a i {
   font-size: 20px;
   color: white;
+}
+.main-page .daily-transaction .header-text {
+  margin: 20px 0px;
+}
+.main-page .daily-transaction .transaction-link {
+  gap: 20px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 0px;
+}
+.main-page .daily-transaction .transaction-link div {
+  flex: 1;
+}
+.main-page .daily-transaction .transaction-link div p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.main-page .daily-transaction .transaction-link div small {
+  font-size: 15px;
+  color: rgb(165, 165, 165);
+}
+.main-page .daily-transaction .transaction-link > p {
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
